@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    section{
+        height: 100vh; /* corrected from 100dvh to 100vh */
+        scroll-snap-align: center;
+    }
+}
